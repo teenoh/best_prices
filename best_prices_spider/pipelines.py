@@ -18,7 +18,7 @@ class BestPricesPipeline(object):
             if value == None:
                 return item
         
-        res = requests.post('http://teenoh.webfactional.com/api/post-item/', data=item)
+        res = requests.post('https://best-prices-api.herokuapp.com/api/post-item/', data=item)
         return item
 
     def close_spider(self, spider):
