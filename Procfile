@@ -1,0 +1,1 @@
+web: gunicorn best_prices_api.server.wsgi

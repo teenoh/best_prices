@@ -10,6 +10,8 @@ requests = "*"
 scrapy = "*"
 djangorestframework = "*"
 django = "*"
+gunicorn = "*"
+django-heroku = "*"
 
 [requires]
 python_version = "3.6"
