@@ -41,6 +41,17 @@ INSTALLED_APPS = [
     'core'
 ]
 
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'best_prices',
+        'USER': 'best_prices',
+        'PASSWORD': 'best_prices123',
+        'HOST': '127.0.0.1',
+        'PORT': '5432',
+    }
+}
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
