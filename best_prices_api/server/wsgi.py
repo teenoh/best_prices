@@ -1,4 +1,4 @@
-from django.core.wsgi import get_wsgi_application
+
 """
 WSGI config for server project.
 
@@ -20,6 +20,7 @@ os.system('workon best_prices_env')
 workspace = os.path.dirname(project)
 sys.path.append(workspace)
 
+from django.core.wsgi import get_wsgi_application
 
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "server.settings")
 
