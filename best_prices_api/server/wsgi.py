@@ -14,7 +14,7 @@ import site
 
 site.addsitedir('/home/teenoh/.virtualenvs/best_prices_venv/lib/python3.5/site-packages')
 activate_this = os.path.expanduser("~/.virtualenvs/best_prices_venv/bin/activate_this.py")
-exec(open(activate_this).read())
+exec(open(activate_this).read(), dict(__file__=activate_this))
 project = '/home/teenoh/webapps/best_prices/best_prices/best_prices_api/'
 workspace = os.path.dirname(project)
 sys.path.append(workspace)
