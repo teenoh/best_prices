@@ -12,14 +12,14 @@ import os
 import sys
 import site
 
-site.addsitedir('/home/teenoh/.virtualenvs/mino/lib/python3.5/site-packages')
-activate_this = os.path.expanduser("~/.virtualenvs/mino/bin/activate_this.py")
+site.addsitedir('/home/teenoh/.virtualenvs/best_prices/lib/python3.7/site-packages')
+activate_this = os.path.expanduser("~/.virtualenvs/best_prices/activate_this.py")
 exec(open(activate_this).read())
-project = '/home/teenoh/webapps/minomain/mino/'
+project = '/home/teenoh/webapps/best_prices/best_prices/'
 workspace = os.path.dirname(project)
 sys.path.append(workspace)
 
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "config.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "server.settings")
 
 application = get_wsgi_application()
