@@ -15,10 +15,10 @@ class JumiaItem(models.Model):
 
     def image_preview(self):
         if self.image:
-            html = f"""
-                <a target='_blank' href='{self.link}'> <img src={self.image} style='height: 80px' /> </a>
+            html = """
+                <a target='_blank' href='{}'> <img src={} style='height: 80px' /> </a>
                 <br />
-            """
+            """.format(self.link, self.image)
             return format_html(html)
         return None
 
