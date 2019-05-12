@@ -24,8 +24,8 @@ def handle_item_post(request):
     PriceLog.objects.create(amount=amount, item=item_instance)    
 
     # delete other logs asides the 5 most recent
-    price_logs = PriceLog.objects.filter().order_by('-date')[:5]
-    PriceLog.objects.exclude(pk__in=price_logs).delete()
+    # price_logs = PriceLog.objects.filter().order_by('-date')[:5]
+    # PriceLog.objects.exclude(pk__in=price_logs).delete()
 
     print(item_obj)
     

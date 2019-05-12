@@ -2,10 +2,12 @@
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
+from server.environment import SETTINGS_MODULE
+
 
 
 def main():
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'server.settings')
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', SETTINGS_MODULE)
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:
