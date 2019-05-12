@@ -18,8 +18,7 @@ class JumiaItemAdmin(admin.ModelAdmin):
         return ['latest_price']
 
 
-
-
-
-
 admin.site.register(JumiaItem, JumiaItemAdmin)
+
+admin.site.site_title = "Best Prices 🔥🔥"
+admin.site.site_header = "Best Prices 🔥🔥"

@@ -1,4 +1,4 @@
-# Best Prices 🔥
+# Best Prices 🔥🔥
 ## Description
 Price monitoring tool
 
