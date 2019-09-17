@@ -22,6 +22,11 @@ class BestPricesPipeline(object):
         
         if environment == 'production':
             API_URL = 'https://best-prices-api.herokuapp.com/api/post-item/'
+        
+        if environment == 'aws_production':
+            API_URL = 'http://develop.upcqqqxpap.us-west-2.elasticbeanstalk.com/api/post-item/'
+            /api/post-item/'
+        
         else:
             API_URL = 'http://localhost:8000/api/post-item/'
 
