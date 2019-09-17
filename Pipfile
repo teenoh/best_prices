@@ -12,6 +12,7 @@ djangorestframework = "*"
 django = "*"
 gunicorn = "*"
 django-heroku = "*"
+pyscopg2-binary = "*"
 
 [requires]
 python_version = "3.6"
