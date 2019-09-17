@@ -16,6 +16,6 @@ DATABASES = {
     }
 }
 
-# STATIC_ROOT = '/home/teenoh/webapps/best_prices_static/'
+
 
 django_heroku.settings(locals())

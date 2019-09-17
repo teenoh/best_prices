@@ -11,7 +11,7 @@ DATABASES = {
 }
 
 
-if 'RDS_HOSTNAME' in os.environ:
+if os.environ.get('RDS_HOSTNAME'):
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.postgresql_psycopg2',
