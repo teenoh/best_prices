@@ -9,10 +9,9 @@ verify_ssl = true
 requests = "*"
 scrapy = "*"
 djangorestframework = "*"
-django = "*"
+django = "==2.1"
 gunicorn = "*"
 django-heroku = "*"
-pyscopg2-binary = "*"
 
 [requires]
 python_version = "3.6"
