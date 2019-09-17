@@ -141,6 +141,6 @@ USE_TZ = True
 
 # STATIC_ROOT = '/home/teenoh/webapps/best_prices_static/'
 STATIC_URL = '/static/'
-STATIC_ROOT = 'static/'
+STATIC_ROOT = os.path.join(BASE_DIR, "static"),
 
 # django_heroku.settings(locals())
