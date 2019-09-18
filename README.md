@@ -37,3 +37,6 @@ Price monitoring tool
 `python manage.py run_crawler` (Note: 1. Your server has to still be running, so run this command in another tab.  2. Make sure your virtualenvironment is active)
 
 7. Check your admin interface to see the scraped items
+
+
+shortened link ==> http://bit.ly/best-prices-admin

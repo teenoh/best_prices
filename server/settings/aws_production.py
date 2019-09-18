@@ -3,6 +3,8 @@ from .base import *
 
 SECRET_KEY = 'secret'
 
+ALLOWED_HOSTS = ['best-prices.us-west-2.elasticbeanstalk.com', 'develop.upcqqqxpap.us-west-2.elasticbeanstalk.com']
+
 
 DATABASES = {
     'default': {

@@ -2,7 +2,17 @@ from django.shortcuts import render
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from .models import JumiaItem, PriceLog
+from core.management.commands.run_crawler import run_crawler
 # Create your views here.
+
+
+@api_view(['POST'])
+def handle_start_crawler(request):
+
+    run_crawler()
+
+    return Response({'status': 'success'})    
+
 
 @api_view(['POST'])
 def handle_item_post(request):
